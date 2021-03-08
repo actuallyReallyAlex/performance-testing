@@ -1,0 +1,23 @@
+{
+  "name": "performance-testing",
+  "version": "0.1.0",
+  "description": "A repo to test out performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./tests/filter-and-map-vs-reduce.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlee-dev/performance-testing.git"
+  },
+  "author": "Alex Lee (www.alexlee.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexlee-dev/performance-testing/issues"
+  },
+  "homepage": "https://github.com/alexlee-dev/performance-testing#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "chalk": "^4.1.0"
+  }
+}
