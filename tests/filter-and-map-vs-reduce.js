@@ -2,8 +2,8 @@ const Benchmark = require('benchmark');
 const chalk = require('chalk');
 const { createMatrix, filterAndMap, filterAndMapWithSet, reduce, reduceWithSet, } = require('../test_methods');
 
-const rows = 10000;
-const columns = 10000;
+const rows = 10;
+const columns = 10;
 
 const sizeOfMatrix = `${Number(rows).toLocaleString()} rows x ${Number(columns).toLocaleString()} columns --- ${Number(rows * columns).toLocaleString()} elements\n`;
 
@@ -32,12 +32,6 @@ suite
     })
     .add('.reduce()', function () {
         reduce(items, ["Columns"])
-    })
-    .add('.filter().map() using Set', function () {
-        filterAndMapWithSet(items, ["Columns"])
-    })
-    .add('.reduce() using Set', function () {
-        reduceWithSet(items, ["Columns"])
     })
     // add listeners
     .on('cycle', function (event) {
